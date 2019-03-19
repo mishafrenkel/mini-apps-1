@@ -1,26 +1,48 @@
-
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
- <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css">  -->
-  </head>
-  <body>
-    <ul class="boxes">
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-    </ul>
-   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="app.js"></script>
-  </body>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="board">
+
+	<div class="box top left" id='0'></div>
+	<div class="box top" id='1'></div>
+	<div class="box top right" id='2'></div>
+	<div class="box left" id='3'></div>
+	<div class="box" id='4'></div>
+	<div class="box right" id='5'></div>
+	<div class="box bottom left" id='6'></div>
+	<div class="box bottom" id='7'></div>
+	<div class="box bottom right" id='8'></div>
+
+</div>
+<div id="popup">
+	<header class='text' id='msg'>Choose Your Icon</header>
+	<div class="chooseIcon" id='choice'>
+		<div class='options' onClick="chooseIcon('X')">X</div>
+		<div class='options' onClick="chooseIcon('O')">O</div>
+	</div>
+</div>
+<div id="end">
+	<div id="gameOverMsg"></div>
+	<div id="endGame"></div>
+</div>
+  
+  
+
+    <script  src="app.js"></script>
+
+
+
+
+</body>
+
 </html>
