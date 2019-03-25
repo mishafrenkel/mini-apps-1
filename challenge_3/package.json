@@ -1,0 +1,22 @@
+{
+  "name": "checkout",
+  "version": "1.0.0",
+  "description": "multi-step process checkout app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpiler": "babel client --out-dir public --presets=env,react --source-maps inline --watch",
+    "start": "nodemon server.js"
+  },
+  "author": "jens",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mysql": "^2.15.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
